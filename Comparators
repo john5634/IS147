@@ -1,0 +1,56 @@
+package com.company;
+
+/**
+ * Created by Teabo on 9/23/2015.
+ */
+
+// Author: John Teabo Johnmteabo@gmail.com
+
+import java.util.Scanner;
+
+
+public class Comparators {
+
+    public static void main(String[] args) {
+        Scanner User_input = new Scanner(System.in);
+        System.out.println("Enter your current age");
+        int Currentage = User_input.nextInt();
+
+        if (Currentage >= 21)
+            System.out.println("Congratualtions! You're old enough to drink!");
+        else
+            System.out.println("Sorry You are not old enough to legally drink :(");
+
+        System.out.println("Enter Your birth month in the form of a number: ");
+        int BirthMon = User_input.nextInt();
+
+        if (BirthMon >= 3 && BirthMon <= 5)
+            System.out.println("Congratulations! You have a spring birthday! ");
+
+        if (BirthMon >= 6 && BirthMon <= 8)
+            System.out.println("Congratulations! You have a summer birthday! ");
+
+        if (BirthMon >= 9 && BirthMon <= 11)
+            System.out.println("Congratulations! You have a Fall birthday! ");
+
+        if (BirthMon >= 12 || BirthMon <= 2 )
+            System.out.println("Congratulations! You have a Winter birthday! ");
+
+        if (BirthMon > 6 && BirthMon <= 12 )
+            System.out.println("Your birthday is also in the second half of the year ");
+
+        if (BirthMon < 6 && BirthMon >= 1 )
+            System.out.println("Your birthday is also in the First half of the year ");
+
+        if (BirthMon == 12 )
+            System.out.println("Your birthday is in the same month as CHRISTMAS!!!");
+
+        if (BirthMon != 12 )
+            System.out.println("Your birthday is NOT in the same month as CHRISTMAS");
+
+
+
+    }
+
+
+}
