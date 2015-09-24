@@ -45,17 +45,6 @@ public class Arithmatic {
 
         Endnum--;
         System.out.println("Your original number was: " + Endnum);
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
