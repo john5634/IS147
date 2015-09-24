@@ -1,0 +1,61 @@
+package com.company;
+
+import java.util.Scanner;
+
+// Author: John Teabo Johnmteabo@gmail.com
+
+public class Arithmatic {
+
+    public static void main(String[] args) {
+        Scanner User_input = new Scanner(System.in);
+        System.out.println("Enter a number you want to add to:");
+        int Add1 = User_input.nextInt();
+
+        System.out.println("Enter the number you want to add:");
+        int Add2 = User_input.nextInt();
+
+        System.out.print("Your solution is: ");
+        System.out.println(Add1 + Add2);
+
+        System.out.println("Next enter a number you want to multiply this number by:");
+        int Multiply1 = User_input.nextInt();
+
+        System.out.print("Your solution is: ");
+        System.out.println((Add1 + Add2) * Multiply1);
+
+        System.out.println("Next enter a number you want to divide this number by:");
+        double Divide1 = User_input.nextDouble();
+
+        System.out.print("Your solution is: ");
+        System.out.println(((Add1 + Add2) * Multiply1) / Divide1);
+        System.out.println("");
+
+        double Endnum = (((Add1 + Add2) * Multiply1) / Divide1);
+
+        double evencheck = ((((Add1 + Add2) * Multiply1) / Divide1) % 2);
+
+
+            if (evencheck > 0)
+                System.out.println("The number " + Endnum + " is not even");
+            else
+                System.out.println("The number " + Endnum + " is even");
+
+        Endnum++;
+        System.out.println("Your number +1 =" + Endnum);
+
+        Endnum--;
+        System.out.println("Your original number was: " + Endnum);
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}
