@@ -1,0 +1,39 @@
+import java.util.Scanner;
+/**
+ * Created by Teabo on 10/4/2015.
+ */
+public class TestAvrage {
+
+// Author: John Teabo Johnmteabo@gmail.com
+
+    public static void main(String[]args)
+    {
+        double score = 0;
+        double totalScore = 0;
+        double count = 0;
+        double average = 0;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a score of -1 to average scores and exit ");
+        System.out.print("Enter First Score: ");
+        score = input.nextDouble();
+
+
+
+        while (score != -1){
+            System.out.print("Enter next score to average: ");
+            totalScore = totalScore + score;
+            score = input.nextDouble();
+            count++;
+            average = totalScore / count;
+
+            if (score == -1) {
+                System.out.println("Average Score = " + average);
+                count = 0;
+                score = 0;
+                totalScore = 0;
+
+            }
+
+        }
