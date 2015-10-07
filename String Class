@@ -1,0 +1,47 @@
+
+
+/**
+ * Created by Teabo on 10/6/2015.
+ */
+public class StringClass
+
+{
+    public static void main(String []args){
+
+        String HW = "Hello World";
+
+        System.out.print("String Lenght = ");
+        System.out.println(HW.length());
+        System.out.print("Last letter of string = ");
+        System.out.println(HW.substring((HW.length()) - 1));
+        System.out.print("The first l appears at index: ");
+        System.out.println(HW.indexOf("l"));
+        System.out.print("The next l appears at index: ");
+        System.out.println(HW.indexOf("l", ((HW.indexOf("l") + 1))));
+        System.out.print("The next l appears at index: ");
+        System.out.println(HW.indexOf("l", ((HW.indexOf("l") + 1) + 1)));
+        System.out.print("String First letter = ");
+        System.out.println(HW.charAt(0));
+        System.out.print("String in upper case is: ");
+        System.out.println(HW.toUpperCase());
+
+        String[] parts = HW.split(" ");
+        String part1 = parts[0];
+        String part2 = parts[1];
+
+        System.out.println("Part 1 of the string Hello World is: " + part1);
+        System.out.println("Part 2 of the string Hello World is: "+ part2);
+
+        System.out.print("String contains the letter W: ");
+        System.out.println(HW.contains("W"));
+
+        String hw = "hello world";
+
+        if (HW.equalsIgnoreCase(hw))
+        System.out.println(HW + " and " + hw + ", have the same meaning. They just have differnt cases");
+
+        else
+        System.out.println("these words are different");
+
+  }
+}
