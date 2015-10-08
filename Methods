@@ -1,0 +1,35 @@
+/**
+ * Created by Teabo on 10/8/2015.
+ */
+public class methods {
+
+    public static int sum(int i1, int i2) {
+        int sum = (i1 + i2);
+
+        return sum;
+    }
+    public static int sub(int i1, int i2) {
+        int sub = (i1 - i2);
+
+        return sub;
+    }
+    public static int mul(int i1, int i2) {
+        int mul = (i1 * i2);
+
+        return mul;
+    }
+    public static double div(double i1, double i2) {
+        double div = (i1/i2);
+
+        return div;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("1 + 10 is " + sum(1, 10));
+        System.out.println("1 - 10 is " + sub(1, 10));
+        System.out.println("1 * 10 is " + mul(1, 10));
+        System.out.println("1 / 10 is " + div(1, 10));
+
+
+    }
+}
