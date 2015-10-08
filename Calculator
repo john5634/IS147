@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+/**
+ * Created by Teabo on 10/4/2015.
+ */
+
+public class Looping {
+
+    public static void main(String [] args)
+
+    {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("Type 0 to quit, Type 1 for add, 2 for subtraction, 3 for multiplication and 4 for division");
+
+        int State = input.nextInt();
+
+        {
+            while (State == 0)
+            {
+                break;
+
+            }
+            while (State == 1)
+            {
+
+                System.out.println("Enter two numbers you would like to calculate with: ");
+                double num1 = input.nextInt();
+                double num2 = input.nextInt();
+                System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+
+            }
+            while (State == 2)
+            {
+
+                System.out.println("Enter two numbers you would like to calculate with: ");
+                double num1 = input.nextInt();
+                double num2 = input.nextInt();
+                System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+
+            }
+            while (State == 3)
+            {
+
+                System.out.println("Enter two numbers you would like to calculate with: ");
+                double num1 = input.nextInt();
+                double num2 = input.nextInt();
+                System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+
+            }
+            while (State == 4) {
+
+                System.out.println("Enter two numbers you would like to calculate with: ");
+                double num1 = input.nextInt();
+                double num2 = input.nextInt();
+                System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+
+            }
+            while (State > 4)
+            {
+                System.out.println("You have entered an invalid value Please enter a number between 0 and 4");
+                break;
+
+            }
+            while (State < 0)
+            {
+                System.out.println("You have entered an invalid value Please enter a number between 0 and 4");
+                break;
+            }
+        }
+
+
+    }
+}
