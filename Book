@@ -1,0 +1,13 @@
+/**
+ * Created by Teabo on 10/11/2015.
+ */
+public class Book {
+
+    private String author;
+    private String title = "Bord";
+    private int pgnumber;
+    private double price;
+    private boolean instock;
+
+    public static String Title(String title){
+        return (Title(title));
