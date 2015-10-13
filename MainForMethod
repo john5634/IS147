@@ -1,0 +1,22 @@
+/**
+ * Created by Teabo on 10/11/2015.
+ */
+    public class Main {
+        public static void main(String[] args) {
+
+            System.out.println(MyName());
+
+        }
+
+        public static String MyName() {
+
+            String MyName = "John Teabo";
+
+            return MyName;
+
+        }
+Book title = new Book();
+    String Title= Book.Title("gih");
+
+
+    }
