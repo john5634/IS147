@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 /**
@@ -18,14 +19,16 @@ public class Arrays2 {
         double b = input.nextDouble();
         sales[i] = b;
         // for (int b;)
-
-        for ( int sales[i] : sales)
+    }
+    System.out.println("Sales");
+        for (int h = 0; h < 7; h++)
 
         {
-            System.out.print("Day" + b +  "Sales " + i );
+            
+            System.out.println("Day " + (h+1) + " Sales " + (sales[h+1]) );
 
         }
-        }
+        
 
     }
 }
