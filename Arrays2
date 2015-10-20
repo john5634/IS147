@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ * Created by Teabo on 10/20/2015.
+ */
+public class Arrays2 {
+
+    public static void main(String[] args)
+    {
+
+        double[] sales = new double[9];
+        Scanner input = new Scanner(System.in);
+
+    for (int i = 1; i<8; i++)
+    {
+        System.out.print("Enter sales for Day " + i + ":");
+
+        double b = input.nextDouble();
+        sales[i] = b;
+        // for (int b;)
+
+        for ( int sales[i] : sales)
+
+        {
+            System.out.print("Day" + b +  "Sales " + i );
+
+        }
+        }
+
+    }
+}
