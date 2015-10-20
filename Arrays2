@@ -1,15 +1,10 @@
-
 import java.util.Scanner;
-
-/**
- * Created by Teabo on 10/20/2015.
- */
+//Created by John Teabo
 public class Arrays2 {
 
     public static void main(String[] args)
     {
-
-        double[] sales = new double[9];
+        double[] sales = new double[8];
         Scanner input = new Scanner(System.in);
 
     for (int i = 1; i<8; i++)
@@ -18,17 +13,17 @@ public class Arrays2 {
 
         double b = input.nextDouble();
         sales[i] = b;
-        // for (int b;)
     }
-    System.out.println("Sales");
-        for (int h = 0; h < 7; h++)
+    System.out.println(" ");
+    System.out.println(" Sales for 7 days ");
+    System.out.println("------------------");
+        for (int h = 1; h < 8; h++)
 
-        {
-            
-            System.out.println("Day " + (h+1) + " Sales " + (sales[h+1]) );
-
-        }
-        
-
+        {   
+            System.out.println("Day " + (h) + " Sales " + (sales[h]) );
+            if (h == 7){
+                System.out.println("Total Sales: "+ (sales[0]+sales[1]+sales[2]+sales[3]+sales[4]+sales[5]+sales[6]));
+            }
+        }    
     }
 }
