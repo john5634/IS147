@@ -1,0 +1,22 @@
+/**
+ * Created by Teabo on 10/19/2015.
+ */
+public class Arrays
+{
+    public static void main(String[]args)
+    {
+
+        int[] values = new int[];
+        for (int i=i;i<8;i++)
+        {
+            int[] input = new int[1];
+            for (int input1 =1;input1 <8;i++)
+            {
+                System.out.println("Enter Sales for Day 1");
+                inputnextline
+                input1++;
+            }
+
+        }
+    }
+}
