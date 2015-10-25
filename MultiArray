@@ -1,0 +1,42 @@
+public class MultiArray {
+
+    public static  void main(String[] args){
+        String[ ][ ] aryNumbers = new String[4][3];
+
+        aryNumbers[0][0] = "IS 147:";
+        aryNumbers[0][1] = "Programming in Java I";
+        aryNumbers[0][2] = "Room 100";
+
+        aryNumbers[1][0] = "IS 247:";
+        aryNumbers[1][1] = "Programming in Java I";
+        aryNumbers[1][2] = "Room 200";
+
+        aryNumbers[2][0] = "IS 410:";
+        aryNumbers[2][1] = "Database Programming 1";
+        aryNumbers[2][2] = "Room 300";
+
+        aryNumbers[3][0] = "IS 420:";
+        aryNumbers[3][1] = "Database Programming 2";
+        aryNumbers[3][2] = "Room 400";
+        
+        int rows = 4;
+        int columns = 3;
+
+        int i, j;
+
+        System.out.println("CourseNumber | Course name | Room");
+        System.out.println("--------------------------------------");
+
+        for (i=0; i < rows ; i++) {
+
+            for (j=0; j < columns ; j++) {
+
+                System.out.print(aryNumbers[i][j] + " ");
+
+            }
+            System.out.println( "" );
+            System.out.println("--------------------------------------");
+            
+        }
+    }
+}
