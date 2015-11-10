@@ -1,0 +1,14 @@
+/**
+ * Created by Teabo on 11/10/2015.
+ */
+public class Main {
+
+    public static void main(String[] args){
+
+
+    Person.surveyPerson();
+        
+        System.out.println(Person.getSmoke);
+
+    }
+}
