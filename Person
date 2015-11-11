@@ -1,23 +1,17 @@
-/**
- * Created by Teabo on 11/10/2015.
- */
+
 import java.util.Scanner;
 
 public class Person {
 
-    public int Smoke;
+    private int Smoke;
 
-    public void surveyPerson()
-
-    {
-        Person person1 = new Person ();
-        person1.askSmoke();
+    public void surveyPerson() {
+        askSmoke();
 
     }
 
-    public void askSmoke()
-    {
-        int Smoke = 0;
+    public void askSmoke() {
+        int Smoking = 0;
 
         String yes = "yes";
         String no = "no";
@@ -27,27 +21,21 @@ public class Person {
         String input1 = input.nextLine();
 
 
-    if (input1.equalsIgnoreCase(yes)){
-        Smoke = -5;}
+        if (input1.equalsIgnoreCase(yes)) {
+            Smoking = -5;
+        } else if (input1.equalsIgnoreCase(no)) {
+            Smoking = 5;
+        }
 
-    else if (input1.equalsIgnoreCase(no)){
-        Smoke = 5;}
-
-        setSmoke(Smoke);
+        setSmoke(Smoking);
 
     }
 
-    public void setSmoke (int F)
-    {
+    public void setSmoke(int F) {
         this.Smoke = F;
     }
 
-    public int getSmoke ()
-    {
-    return Smoke;
+    public int getSmoke() {
+        return Smoke;
     }
-
 }
-
-
-
