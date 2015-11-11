@@ -1,14 +1,13 @@
-/**
- * Created by Teabo on 11/10/2015.
- */
+
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
+        Person person1 = new Person();
 
-    Person.surveyPerson();
-        
-        System.out.println(Person.getSmoke);
+        person1.surveyPerson();
+
+        System.out.println(person1.getSmoke());
 
     }
 }
