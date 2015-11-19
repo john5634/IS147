@@ -4,23 +4,17 @@ public class Main {
         int i;
         int j;
         int x = 10;
-        for (int y = 0; y < x; y++) { // number of row of '*'
-
+        for (int y = 0; y < x; y++) { 
+        // x is the number of rows of '*'
 
             for (j = 0; j < y / 2 + 1; j++)
-                // number of '*' each row
                 System.out.print(' ');
-
+                
             for (i = y; i < x - 1; i ++)
-                // number of space each row
-
                 System.out.print('*');
 
             for (j = 0; j < y * 2 + 1; j++)
-                // number of '*' each row
                 System.out.print(' ');
-
-            System.out.println();
         }
     }
 }
