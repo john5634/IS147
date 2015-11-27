@@ -1,0 +1,25 @@
+public class Operation {
+
+    public int square(int n){
+        return (n*n);
+    }
+}
+class Circle{
+    Operation obj = new Operation();
+
+    double pi = Math.PI;
+
+    double area(int radius){
+        obj.square(5);
+        return radius*pi;
+    }
+
+    public static void main(String args[]){
+
+        Circle cirobj = new Circle();
+        double NewVar =cirobj.area(9);
+
+        System.out.println(NewVar);
+
+    }
+}
